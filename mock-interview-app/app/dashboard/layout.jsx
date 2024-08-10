@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from './_components/Header.jsx'
 
-function DashboardLayout({children}) {
+function DashboardLayout({ children }) {
   return (
-    <>
-    <Header/>
-    {children}
-    </>
+    <div>
+      <Header />
+      <div className='mx-5 md:mx-20 lg:mx-36'>
+        {children}
+      </div>
+    </div>
   )
 }
 
